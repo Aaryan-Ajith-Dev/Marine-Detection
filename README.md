@@ -24,25 +24,14 @@ The model was developed as part of an industry project focused on automated moni
 
 ---
 
-## Usage
+## Anomaly Detection with PaDiM
+Alongside Faster R-CNN, this project also explores anomaly detection using the PaDiM (Patch Distribution Modeling) method to identify outlier regions in drone imagery — useful for spotting unusual marine activity or unidentified species.
 
-### 1. Install Dependencies
-```bash
-pip install torch torchvision matplotlib pillow
-```
-
-### 2. Training
-```python
-model = get_model(num_classes)
-train(model, data_loader, device, num_epochs=20, lr=1e-4)
-```
-
----
-
-## Sample Results
-> *Note: Visualizations below are from internal datasets and not shared due to confidentiality.*
-
-(If permitted by company, you can insert blurred or symbolic outputs here)
+### Highlights
+- Used pre-trained ResNet-18 feature extractor.
+- Modeled patch-wise feature distributions.
+- Generated heatmaps highlighting anomalous regions.
+- Visual evaluation of anomaly maps on marine drone images.
 
 ---
 
@@ -68,4 +57,3 @@ This repository contains code independently developed for object detection tasks
 
 ## License
 MIT License
-
